@@ -1,0 +1,22 @@
+title Part0 - 0.5 SPA
+
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over browser:
+the POST request contains the new note as 
+JSON-data containing both the content of
+the note (content) and the timestamp (date)
+end note
+
+server-->browser: JSON-response {"message":"note created"}
+
+note over server:
+Status code returned is 201
+end note
+
+note over browser:
+This time the server does not ask for a 
+redirect, the browser stays on the same
+page, and it sends no further HTTP requests
+end note
